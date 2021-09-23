@@ -1,0 +1,15 @@
+a {
+    color: grey;
+
+    font-size: 18px;
+}
+
+.box{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border: 1px solid green;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
