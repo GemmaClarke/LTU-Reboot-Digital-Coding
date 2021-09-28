@@ -21,3 +21,23 @@ a {
     height: 100px;
 }
 */
+
+header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+
+    
+}
+
+ol { 
+         
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    width: 380px;
+}
