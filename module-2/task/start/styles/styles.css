@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
 header{
    
     display: flex;
@@ -22,8 +24,8 @@ ol {
 
 a {
     color: grey;
-
     font-size: 18px;
+      text-decoration: none;
 }
 
 
@@ -64,6 +66,7 @@ main input[type=text]{
   width: 100%;
   margin-top: -4px;
   font-size: 22px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 div.search-container input[type="text"]:focus{
