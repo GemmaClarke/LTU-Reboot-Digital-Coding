@@ -17,11 +17,11 @@ let quantity = 4;
 let inStock = true;
 let discountAmount = 10;
 
-console.log( 'Product Name:', productName );
-console.log( 'Price:', price );
-console.log( 'Quantity:', quantity );
-console.log( 'In Stock:', inStock );
-console.log( 'Discount:', discountAmount );
+// console.log( 'Product Name:', productName );
+// console.log( 'Price:', price );
+// console.log( 'Quantity:', quantity );
+// console.log( 'In Stock:', inStock );
+// console.log( 'Discount:', discountAmount );
 
 // typeof shows the different data types
 
@@ -52,4 +52,102 @@ console.log( 'Discount:', discountAmount );
 
 
 
+//function showProductName() {
+ //   console.log( productName );
+// }
 
+// function totalPrice( productPrice,productQuantity ) {
+ //   console.log( productPrice * productQuantity );
+
+// showProductName();
+
+// totalPrice( price, quantity);
+
+// const totalPrice = ( productPrice,productQuantity ) => console.log( productPrice * productQuantity );
+
+// const showProductName() => console.log( productName );
+
+// const greet = name => console.log( name );
+
+// function checkAvailability( productInStock ) {
+ //   console.log( productInStock );
+// }
+
+// const checkAvailability = ( productInStock ) => console.log( productInStock );
+
+// checkAvailability( inStock );
+
+// let global = 'Global scope';
+
+// const localScope = () => {
+ //    let scope = 'Local Scope'; // Local
+  //   console.log(scope);
+// }
+
+// localScope();
+
+// console.log( global );
+
+const productDiscount = () => {
+ if ( quantity > 1 ){
+ let newPrice = discountAmount - (price * quantity);
+     console.log( newPrice );
+  }
+ }
+
+// productDiscount();
+
+//switch Statement
+
+// const level = 6;
+
+// switch( level ) {
+//   case 1 :
+//     console.log('You are on level 1');
+//   break; 
+//   case 2 :
+//     console.log('You are on level 1');
+//   break; 
+//   case 3 :
+//     console.log('You are on level 1');
+//   break; 
+//   case 4 :
+//     console.log('You are on level 1');
+//   break; 
+//   default:
+//     console.log('No level found');
+//     break;
+//  }
+
+// if( level === 1 ) {
+//   console.log('You are on level 1');
+// } else if(level === 2 ) {
+//   console.log('You are on level 2');
+// }
+// else {
+//   console.log('No level found');
+// }
+
+  // ....... code
+
+  const drinkOrder = ( drink, size ) => {
+
+    switch( drink ) {
+      case 'cola':
+        console.log( `${size} : ${drink}` );
+        break;
+      case 'lemonade':
+        console.log( `${size} : ${drink}` );
+        break;
+      case 'orangeade':
+        console.log( `${size} : ${drink}` );
+        break;   
+        default:
+          console.log(`We currently dont have your ${drink} in stock`);
+          break;
+
+    }
+
+  }
+
+  drinkOrder('apple juice', 'extra large');
