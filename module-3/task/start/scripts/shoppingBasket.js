@@ -1,4 +1,4 @@
-const shoppingCart = [
+const shoppingBasket = [
   { name: "Ketchup", type: "condiment", quantity: 1, price: 1.20 },
   { name: "Butter", type: "dairy", quantity: 1, price: 1.79 },
   { name: "Ice Cream", type: "frozen", quantity: 2, price: 2.50 },
@@ -25,3 +25,4 @@ const shoppingCart = [
   { name: "Bananas", type: "fruit", quantity: 6, price: .20 },
   { name: "Cauliflower", type: "vegetables", quantity: 1, price: .48 },
 ];
+
