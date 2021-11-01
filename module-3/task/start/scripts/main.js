@@ -236,41 +236,41 @@ let discountAmount = 10;
 
  //  multiply( 8,16);
 
-function totalPriceOfShopping( arr ) {
-  let totalPrice = 0;
-  // console.log( arr[0]);
+// function totalPriceOfShopping( arr ) {
+//   let totalPrice = 0;
+//   // console.log( arr[0]);
   
-for( let index = 0; index < arr.length; index++ )  {
-  totalPrice = totalPrice + (arr[index].price * arr[index].quantity);
+// for( let index = 0; index < arr.length; index++ )  {
+//   totalPrice = totalPrice + (arr[index].price * arr[index].quantity);
   
-  }
+//   }
 
-  return totalPrice.toFixed(2); 
+//   return totalPrice.toFixed(2); 
 
-}
+// }
 
-//console.log( totalPriceOfShopping( shoppingBasket ) ) ;
+// //console.log( totalPriceOfShopping( shoppingBasket ) ) ;
 
-function discountType( arr, type, discount ) {
-  let totalPrice = 0;
+// function discountType( arr, type, discount ) {
+//   let totalPrice = 0;
 
-  for( let index =0; index < arr.length; index++){
+//   for( let index =0; index < arr.length; index++){
 
-    if( arr[index].type === type ){
+//     if( arr[index].type === type ){
 
-      let discountAmount = discount * ( arr[index].price * arr[index].quantity) / 100;
-      totalPrice = totalPrice + ( arr[index].price * arr[index].quantity - discountAmount);
+//       let discountAmount = discount * ( arr[index].price * arr[index].quantity) / 100;
+//       totalPrice = totalPrice + ( arr[index].price * arr[index].quantity - discountAmount);
    
-    } else{
+//     } else{
 
-      totalPrice = totalPrice + ( arr[index].price * arr[index].quantity );
-    }
+//       totalPrice = totalPrice + ( arr[index].price * arr[index].quantity );
+//     }
 
     
-  } // end of loop
+//   } // end of loop
 
-  return totalPrice.toFixed(2);
-}
+//   return totalPrice.toFixed(2);
+// }
 // console.log( discountType( shoppingBasket, 'vegetables', 20) ) ;
 // console.log( discountType( shoppingBasket, 'toiletries', 50) ) ;
 // console.log( discountType( shoppingBasket, 'beverages', 10) ) ;
@@ -286,8 +286,44 @@ function discountType( arr, type, discount ) {
 
 // map, filter, reduce - High Level functions
 
-let arr = [1,2,3,4,5];
 
-arr.map( (element) =>{
-  
-})
+
+// const newArray = arr.map( element => element + 2 );
+
+// console.log( arr, newArray);
+
+// filter 
+// const moreThanThree = arr.filter( (element) => {
+//   return element > 3;
+// });
+
+
+// const moreThanThree = arr.filter(element => element > 3);
+
+// console.log( moreThanThree);
+
+// reduce
+
+// let arr = [1,2,3,4,5];
+
+// const total = arr.reduce( (acc, curr ) => {
+//   return acc + curr;
+// }, 0);
+
+// const total = arr.reduce( (acc, curr ) => acc + curr, 0);
+
+// console.log( total );
+
+// const obj = {
+//   name: 'Luke',
+//   age: 37,
+//   profession: 'web developer'
+// }
+
+// // for in loop for objects
+
+// for( let key in obj) {
+//   console.log( `${key} : ${obj[key]} ` );
+// }
+
+
