@@ -224,15 +224,30 @@ let discountAmount = 10;
   //  }
 
 
-  function multiply( num, maxNum){
-    for (let counter = 1; counter <= maxNum; counter++ ){
+  // function multiply( num, maxNum){
+  //   for (let counter = 1; counter <= maxNum; counter++ ){
 
-      let multiplyBy = num;
-      let result = counter * multiplyBy;
-    console.log( ` ${counter} * ${num} = ${result}` )
+  //     let multiplyBy = num;
+  //     let result = counter * multiplyBy;
+  //   console.log( ` ${counter} * ${num} = ${result}` )
     
-    }
-  }
+  //   }
+  // }
 
  //  multiply( 8,16);
+
+function totalPriceOfShopping( arr ) {
+  const totalPrice =0;
+  // console.log( arr[0]);
+  
+for( let index = 0; index < arr.length; index++ )  {
+    console.log(arr[index]);
+  }
+
+}
+
+  
+
+totalPriceOfShopping( shoppingBasket );
+
 
