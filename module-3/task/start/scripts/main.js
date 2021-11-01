@@ -237,17 +237,57 @@ let discountAmount = 10;
  //  multiply( 8,16);
 
 function totalPriceOfShopping( arr ) {
-  const totalPrice =0;
+  let totalPrice = 0;
   // console.log( arr[0]);
   
 for( let index = 0; index < arr.length; index++ )  {
-    console.log(arr[index]);
+  totalPrice = totalPrice + (arr[index].price * arr[index].quantity);
+  
   }
+
+  return totalPrice.toFixed(2); 
 
 }
 
+//console.log( totalPriceOfShopping( shoppingBasket ) ) ;
+
+function discountType( arr, type, discount ) {
+  let totalPrice = 0;
+
+  for( let index =0; index < arr.length; index++){
+
+    if( arr[index].type === type ){
+
+      let discountAmount = discount * ( arr[index].price * arr[index].quantity) / 100;
+      totalPrice = totalPrice + ( arr[index].price * arr[index].quantity - discountAmount);
+   
+    } else{
+
+      totalPrice = totalPrice + ( arr[index].price * arr[index].quantity );
+    }
+
+    
+  } // end of loop
+
+  return totalPrice.toFixed(2);
+}
+// console.log( discountType( shoppingBasket, 'vegetables', 20) ) ;
+// console.log( discountType( shoppingBasket, 'toiletries', 50) ) ;
+// console.log( discountType( shoppingBasket, 'beverages', 10) ) ;
+
+// console.log(discountToiletries( shoppingBasket ));
+
+// shoppingBasket.forEach( item => console.log( item );
+
+
+// for( let index = 0; index < shoppingBasket.length; index++){
+//   console.log( shoppingBasket[index]);
+// }
+
+// map, filter, reduce - High Level functions
+
+let arr = [1,2,3,4,5];
+
+arr.map( (element) =>{
   
-
-totalPriceOfShopping( shoppingBasket );
-
-
+})
