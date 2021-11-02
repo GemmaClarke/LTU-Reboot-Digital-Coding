@@ -326,4 +326,4 @@ let discountAmount = 10;
 //   console.log( `${key} : ${obj[key]} ` );
 // }
 
-
+const heading1 = document.querySelector('h1');
