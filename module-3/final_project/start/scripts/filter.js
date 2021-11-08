@@ -1,23 +1,39 @@
-const active = document.querySelector('.active');
 const buttons = document.querySelectorAll('button');
 
-const imageSource = document.querySelectorAll('.image img');
-
 const allImages = document.querySelectorAll('.image');
+// Collect all image and save in a variable called allImages
 
-function toggleImages( dataClass ){
- if ( dataClass === 'all' ){
-    allImages.forEach(image => image.style.display = 'flex' );
- } else {
-     allImages.forEach( image => {
-         if(image.dataset.class ){
-             
-         }
-     })
- }
+
+const toggleImages = dataClass => {
+    // Ternary operator
+    dataClass === 'all' 
+    ? allImages.forEach( image => image.style.display = 'flex' ) 
+    : allImages.forEach( image => {
+    image.dataset.class === dataClass 
+    ? (image.style.display = 'flex')
+    : ( image.style.display = 'none' );
+
+});
+
 }
 
+   
 
+const toggleActiveClass = ( active ) => {
+    buttons.forEach( button => {
+        button.classList.remove('active');
+    })
+
+    active.classList('active');
+}
+
+buttons.forEach ( button=> {
+    button.addEventListener('click', () => {
+        toggleImages(button.dataset.class);
+        toggleActiveClass( button );
+
+    });
+})
 
 // const main = document.querySelector('main');
 
@@ -29,7 +45,7 @@ function toggleImages( dataClass ){
 //         newImage.setAttribute('src', 'https://images.unsplash.com/photo-1611948357031-ef7bce1e44f0')
 //         newDiv.appendChild(newImage);
 
-// main.appendChild( newImage );
+// main.appendChild( newDiv );
 
 
 
