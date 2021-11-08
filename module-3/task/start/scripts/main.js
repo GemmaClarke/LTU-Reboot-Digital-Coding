@@ -326,4 +326,10 @@ let discountAmount = 10;
 //   console.log( `${key} : ${obj[key]} ` );
 // }
 
-const heading1 = document.querySelector('h1');
+// DOM
+
+// const heading1 = document.querySelector('h1');
+// const heading4 = document.querySelector('h4');
+
+// // const paragraphs = document.querySelectorAll('p');
+// 
